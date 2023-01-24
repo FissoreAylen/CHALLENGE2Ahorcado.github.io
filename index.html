@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado ALURA</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="script.js">
+
+</head>
+<body>
+    
+    <!-- Logo -->
+    <img src="imagenes/Vector.png" alt="Logo Alura" class="logo">
+    
+    <div id="div-desaparece" class="botones-home">
+        <a href="#hoja">
+            <!-- podemos usar input o button -->
+            <input class="btn-iniciar" type="submit" value="Iniciar Juego" id="iniciar-juego" onclick="iniciarJuego()"> <!-- para que al hacer click para iniciar el juego, desaparezca el div de los botones -->
+
+        </a>
+    </div>
+
+    <div id="div-aparece-ahorcado" class="canvas">
+        <!-- Canvas: etiqueta html que nos permite realizar diseños con coordenadas, trabaja en dos dimensiones -->
+        <div class="subrayado">
+            <canvas id="hoja" width="1200" height="860">
+
+            </canvas>
+        </div>
+    </div>
+    
+    <!-- Javascript-->
+    <script src="script.js"></script>
+</body>
+
+<footer>Aylen Fissore Vergara</footer>
+</html>
